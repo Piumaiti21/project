@@ -2,10 +2,11 @@
 body{
 
     font-family: 'Raleway', sans-serif;
+    overflow: hidden;
     background:radial-gradient(ellipse at bottom , #1b2735 0%, #090a0f 100%);
     color:#524d4d;
-    margin:0;
-    padding:0;
+    margin:0px;
+    padding:0px;
 }
 .container{
     width: 400px;
@@ -98,6 +99,7 @@ body{
     font-weight:350;
     letter-spacing: -1px;
 }
+/* galaxy background */
 #stars {
     width: 1px;
     height: 1px;

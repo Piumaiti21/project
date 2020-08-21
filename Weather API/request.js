@@ -1,5 +1,6 @@
+//api key
 const key ='73faa414a789c07612180f739ce41cc2';
-
+//requesting city data from the api
 const requestCity=async (city)=>{
     const baseURL='http://api.openweathermap.org/data/2.5/weather';
     const query = `?q=${city}&appid=${key}`;

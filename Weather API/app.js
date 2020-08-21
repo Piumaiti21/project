@@ -1,9 +1,11 @@
+// query selectors
 const form = document.querySelector('.search-location');
 const citySearched = document.querySelector('.search-location input');
 const cityName = document.querySelector('.city-name p');
 const information = document.querySelector('.body-section');
 const backgroundImage=document.querySelector('.top-section img');
 
+// DOM manipulation(updates)
 updateWeather = (data) => {
     console.log(data);
     cityName.textContent = data.name;
@@ -37,6 +39,7 @@ updateWeather = (data) => {
 
                 </div>
     `;
+    // day/night background change
     if (checkDay(iconName)) {
         console.log('day');
         backgroundImage.setAttribute('src', 'img/day_image.svg');}
@@ -46,17 +49,19 @@ updateWeather = (data) => {
         }
 };
 
-
+// celcius conversion
 const kelvinToCelsius=(k)=>{
     C=Math.round(k-273.15);
     return C;
 };
 
+// function to check day or night
 const checkDay=(icon)=>{
     if (icon.includes('d')) { return true }
     else { return false }
 
 };
+// getting  city value from the input box and connecting the city to weather api
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const cityValue = citySearched.value.trim();

@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css">
     <title>Weather API</title>
 </head>
@@ -25,7 +27,7 @@
         <div class="card rounded my-3 shadow-lg weather-box">
             <div class="top-section text-center">
                 <div class="city-name my-3">
-                    <p>Kolkata</p>
+                    <p>Please enter your City Name</p>
                     <span>...</span>
                 </div>
                 <img src="img/night_image.svg" alt="" class="card-img-top time">
@@ -34,26 +36,26 @@
             <div class="body-section">
                 <div class="mid-section row">
                     <div class="col-8 text-center temperature">
-                        <span>30&deg;C</span>
+                        <span>--&deg;C</span>
 
                     </div>
                     <div class="col-4 temperature-condition">
-                        <p class="high">38&deg;C</p>
-                        <p class="low">27&deg;C</p>
+                        <p class="high">--&deg;C</p>
+                        <p class="low">--&deg;C</p>
                     </div>
                 </div>
                 <div class="icon-section   text-center ">
                     <img class="icon"src="icons/unknown.png" alt="">
-                    <p>Thunder Storm</p>
+                    <p>---------</p>
 
                 </div>
                 <div class="bottom-section  px-5 py-4 row">
                     <div class="col text-center">
-                        <p>30&deg;C</p>
+                        <p>--&deg;C</p>
                         <span>Feels like</span>
                     </div>
                     <div class="col text-center">
-                        <p>55%</p>
+                        <p>--%</p>
                         <span>Humidity</span>
                     </div>
 
